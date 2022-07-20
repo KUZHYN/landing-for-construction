@@ -1,0 +1,81 @@
+:root {
+    --main-text-colour: #434343;
+    --white: #ffffff;
+    --second-text-colour: #056088;
+    --acent: #09A7CA;
+}
+
+body {
+    /* background-color: var(--white); */
+    background-color: gray;
+    color: var(--main-text-colour);
+}
+
+ul {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.button-link {
+    color: var(--white);
+}
+
+.button {
+    color: var(--white);
+}
+
+header {
+    color: var(--white);
+}
+
+.link:hover, .link:focus {
+color: var(--acent);
+}
+
+.hero {
+    color: var(--white);
+}
+
+.our-company > h2, .our-company-list p {
+    color: var(--second-text-colour);
+}
+
+.services > h2 {
+    color: var(--second-text-colour);
+}
+
+.benefits > h2 {
+    color: var(--second-text-colour);
+}
+
+.benefits-list h3, .benefits-list p {
+    color: var(--white);
+}
+
+.works {
+    color: var(--white);
+}
+
+.reviews > h2 {
+    color: var(--second-text-colour);
+}
+
+.review {
+    color: var(--white);
+}
+
+.video > p {
+    color: var(--white);
+}
+
+.subscribe {
+    color: var(--white);
+}
+
+footer {
+    color: var(--white);
+}
