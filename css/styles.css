@@ -9,27 +9,70 @@ body {
     /* background-color: var(--white); */
     background-color: gray;
     color: var(--main-text-colour);
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
 }
 
 ul {
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
     color: inherit;
 }
 
+.text-first {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.text-second {
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.text-third {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.7;
+}
+
+.text-fourth {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.7;
+}
+
 .button-link {
     color: var(--white);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.7;
+    text-align: center;
 }
 
 .button {
     color: var(--white);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.7;
+    text-align: center;
 }
 
 header {
     color: var(--white);
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 66px;
+    line-height: 1.17;
+}
+
+.header-nav a {
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 .link:hover, .link:focus {
@@ -40,16 +83,53 @@ color: var(--acent);
     color: var(--white);
 }
 
+.hero-title {
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 1.5;
+}
+
+.hero-text,
+.hero-button-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
 .our-company > h2, .our-company-list p {
     color: var(--second-text-colour);
 }
 
+.our-company-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.7;
+}
+
+.company-text-second {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
 .services > h2 {
     color: var(--second-text-colour);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.7;
+    text-align: center;
+}
+
+.services > p {
+    text-align: center;
 }
 
 .benefits > h2 {
     color: var(--second-text-colour);
+}
+
+.benefits {
+    text-align: center;
 }
 
 .benefits-list h3, .benefits-list p {
@@ -60,12 +140,30 @@ color: var(--acent);
     color: var(--white);
 }
 
+.works > h2,
+.works > p {
+    text-align: center;
+}
+
+
 .reviews > h2 {
     color: var(--second-text-colour);
 }
 
 .review {
     color: var(--white);
+}
+
+.review-text {
+    font-style: italic;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.review-end {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.7;
 }
 
 .video > p {
@@ -76,6 +174,36 @@ color: var(--acent);
     color: var(--white);
 }
 
+.subscribe > h2 {
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.subscribe > p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.7;
+    text-align: center;
+}
+
 footer {
     color: var(--white);
+}
+
+.contacts-list a {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.footer-menu {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.7;
+}
+
+.footer-nav a {
+    font-size: 16px;
+    line-height: 1.5;
 }
