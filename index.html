@@ -10,10 +10,14 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <header>
+        <div class="container">
         <a href="/" class="logo">Logo</a>
         <nav class="header-nav">
             <ul>
@@ -24,53 +28,61 @@
                 <li><a href="#contacts" class="link">Контакти</a></li>
             </ul>
         </nav>
+        </div>
     </header>
     <main>
         <section class="hero">
-            <h1 class="hero-title">Ми будуемо дім вашої мрії якісно та професійно</h1>
-            <p class="hero-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore asperiores ea excepturi.</p>
-            <a class="hero-button-link button-link" href="">Зв'яжіться з нами</a>
+            <div class="container">
+                <h1 class="hero-title">Ми будуемо дім вашої мрії якісно та професійно</h1>
+                <p class="hero-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore asperiores ea excepturi.</p>
+                <a class="hero-button-link button-link" href="">Зв'яжіться з нами</a>
+            </div>
         </section>
         <section class="our-company" id="about">
+            <div class="container">
             <h2 class="our-company-title text-fourth">Наша компанія</h2>
-            <p class="text-first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex qui soluta accusamus eum eaque nobis dolorum in, aperiam deleniti. Asperiores veniam quaerat rerum doloribus quasi error, aut velit eos facilis.</p>
+            <p class="text-first company-text-first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex qui soluta accusamus eum eaque nobis dolorum in, aperiam deleniti. Asperiores veniam quaerat rerum doloribus quasi error, aut velit eos facilis.</p>
             <p class="company-text-second">Lorem, ipsum dolor.</p>
             <ul class="our-company-list">
                 <li><p class="text-third">50+ Кліентів</p></li>
                 <li><p class="text-third">30+ Домів</p></li>
                 <li><p class="text-third">30+ Домів</p></li>
             </ul>
-            <a class="our-company-button-link button-link" href="">Побачити більше</a>
+            <a class="our-company-button-link button-link see-more" href="">Побачити більше</a>
+            </div>
         </section>
         <section class="services" id="services">
+            <div class="container">
             <h2 class="text-fourth">Наші послуги</h2>
             <p class="text-first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam voluptatum ducimus cum!</p>
-            <ul>
+            <ul class="services-list">
                 <li>
                     <img src="./images/servicesV1.svg" alt="">
                     <h3 class="text-third">Lorem, ipsum dolor.</h3>
-                    <p class="text-second">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p class="text-second">Lorem ipsum dolor sit amet consecte</p>
                 </li>
                 <li>
                     <img src="./images/servicesV2.svg" alt="">
                     <h3 class="text-third">Lorem, ipsum dolor.</h3>
-                    <p class="text-second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, nihil.</p>
+                    <p class="text-second">Lorem ipsum dolor sit amet consectetur adi</p>
                 </li>
                 <li>
                     <img src="./images/servicesV3.svg" alt="">
-                    <h3 class="text-third">Lorem, ipsum dolor.</h3>
-                    <p class="text-second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, nihil eaque.</p>
+                    <h3 class="text-third">Build from scratch</h3>
+                    <p class="text-second">We have an contractor for build new building from scratch</p>
                 </li>
-                <li>
+                <li class="services-list-li">
                     <img src="./images/servicesV4.svg" alt="">
-                    <h3 class="text-third">Lorem ipsum dolor sit.</h3>
-                    <p class="text-second">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti porro minus ut alias laborum. Reprehenderit.</p>
+                    <h3 class="text-third">Lorem ipsum dolor.</h3>
+                    <p class="text-second">Lorem ipsum dolor sit amet consectetur</p>
                 </li>
             </ul>
+            </div>
         </section>
         <section class="benefits">
-            <h2 class="text-fourth">Наші переваги</h2>
-            <p class="text-first">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            <div class="container">
+            <h2 class="text-fourth benefits-title">Наші переваги</h2>
+            <p class="text-first benefits-p">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
             <ul class="benefits-list">
                 <li>
                     <img src="./images/tick.svg" alt="">
@@ -88,8 +100,10 @@
                     <p class="text-second">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, eveniet!</p>
                 </li>
             </ul>
+            </div>
         </section>
         <section class="works" id="gallery">
+            <div class="container">
             <h2 class="text-fourth">Наші роботи</h2>
             <p class="text-first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, eius?</p>
             <ul class="works-list">
@@ -103,31 +117,45 @@
                 <li><img src="./images/worksV8.png" alt=""></li>
                 <li><img src="./images/worksV9.png" alt=""></li>
             </ul>
-            <a class="works-button-link button-link" href="">Побачити більше</a>
+            <a class="works-button-link button-link see-more" href="">Побачити більше</a>
+            </div>
         </section>
         <section class="reviews">
-            <h2 class="text-fourth">Що кажуть наші кліенти</h2>
-            <p class="text-first">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <a href="" class="rewiews-button-link button-link">Побачити більше</a>
-            <div class="review"> 
-                <img src="./images/reviewsV1.png" alt="">
-                <p class="review-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum, esse fugit alias hic veritatis accusantium asperiores ab, voluptatem temporibus quae distinctio natus, totam unde reiciendis itaque tempore non assumenda eum.</p>
-                <p class="review-end">Mr.Robiro</p>
+            <div class="container">
+                <div class="rewiews-block">
+                    <h2 class="text-fourth">Що кажуть наші кліенти</h2>
+                    <p class="text-first">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="" class="rewiews-button-link button-link see-more">Побачити більше</a>
+                </div>
+                <div class="review"> 
+                    <img src="./images/reviewsV1.png" alt="">
+                    <p class="review-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum, esse fugit alias hic veritatis accusantium asperiores ab, voluptatem temporibus quae distinctio natus, totam unde reiciendis itaque tempore non assumenda eum.</p>
+                    <p class="review-end">Mr.Robiro</p>
+                </div>
             </div>
         </section>
         <section class="video">
-            <iframe src="" frameborder="0"></iframe>
-            <p class="text-first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, dolores!</p>
+            <div class="container">
+                <div class="video-container">
+                    <iframe src="" frameborder="0"></iframe>
+                </div>
+                <p class="text-first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, dolores!</p>
+            </div>
         </section>
         <section class="subscribe">
-            <h2>Бажаете отримувати свіжі новини?</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex, consectetur.</p>
-            <input type="text">
-            <!-- <a href="" class="subscribe-button-link button-link">Відправити</a> -->
-            <button type="submit" class="button">Відправити</button>
+            <div class="container">
+                <div class="container-sub">
+                    <h2>Бажаете отримувати свіжі новини?</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex, consectetur.</p>
+                    <input type="text">
+                    <!-- <a href="" class="subscribe-button-link button-link">Відправити</a> -->
+                    <button type="submit" class="button">Відправити</button>
+                </div>
+            </div>
         </section>
     </main>
     <footer id="contacts">
+        <div class="container">
         <a href="/" class="logo">Logo</a>
         <ul class="contacts-list">
             <Li><a href="">+3809488392</a></Li>
@@ -140,6 +168,7 @@
             <li><a href="#services" class="link">Послуги</a></li>
             <li><a href="#gallery" class="link">Галерея</a></li>
         </ul>
+        </div>
     </footer>
 </body>
 </html>
