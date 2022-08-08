@@ -92,8 +92,8 @@ video {
 }
 
 body {
-    /* background-color: var(--white); */
-    background-color: gray;
+    background-color: var(--white);
+    /* background-color: gray; */
     color: var(--main-text-colour);
     font-family: Montserrat, sans-serif;
     font-style: normal;
@@ -181,6 +181,7 @@ input {
 
 header {
     color: var(--white);
+    background-color: grey;
 }
 
 .logo {
@@ -189,9 +190,26 @@ header {
     line-height: 1.17;
 }
 
+.header-nav .header-nav-list {
+    display: flex;
+}
+
+.header-nav-list > li:not(:last-child) {
+    margin-right: 40px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .header-nav a {
     font-size: 16px;
     line-height: 1.5;
+    padding-top: 57px;
+    padding-bottom: 57px;
+    display: block;
 }
 
 .link:hover, .link:focus {
@@ -200,6 +218,7 @@ color: var(--acent);
 
 .hero {
     color: var(--white);
+    background: linear-gradient(26.47deg, #023957 22.58%, #056088 94.16%);
 }
 
 .hero-title {
@@ -220,9 +239,24 @@ color: var(--acent);
     line-height: 1.7;
 }
 
+.our-company {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
 .our-company-list p {
     color: var(--second-text-colour);
     margin-bottom: 32px;
+}
+
+.our-company-list {
+    display: flex;
+    justify-content: center;
+}
+
+.our-company-list > li:not(:last-child) {
+    margin-right: 62px;
 }
 
 .our-company-title {
@@ -242,6 +276,10 @@ color: var(--acent);
     font-size: 16px;
     line-height: 1.8;
     margin-bottom: 16px;
+}
+
+.services {
+    padding-bottom: 100px;
 }
 
 .services h2 {
@@ -264,6 +302,11 @@ color: var(--acent);
 
 }
 
+.services-list {
+    display: flex;
+    justify-content: space-between;
+}
+
 .services-list li {
     width: 310px;
     padding-left: 30px;
@@ -273,7 +316,14 @@ color: var(--acent);
     /* margin-right: 20px; */
 }
 
+.services-list li:hover {
+    background: linear-gradient(180deg, rgba(5, 96, 136, 0.8) 0%, rgba(2, 57, 87, 0.8) 100%);
+    color: #fff;
+}
 
+.services-list li > img:hover {
+    fill: #fff;
+}
 
 /* .services-list {
     text-align: center;
@@ -281,10 +331,6 @@ color: var(--acent);
     flex-wrap: wrap;
     flex-direction: row;
 } */
-
-.services-list .services-list-li {
-    margin: 0;
-}
 
 .benefits h2.benefits-title {
     color: var(--second-text-colour);
@@ -297,6 +343,7 @@ color: var(--acent);
 
 .benefits {
     text-align: center;
+    padding-bottom: 50px;
 }
 
 .benefits-list h3, .benefits-list p {
@@ -305,12 +352,12 @@ color: var(--acent);
 }
 
 .benefits-list li {
+    width: 420px;
     padding-right: 95px;
     padding-left: 95px;
     padding-bottom: 42px;
     padding-top: 52px;
     background: linear-gradient(180deg, rgba(5, 96, 136, 0.8) 0%, rgba(2, 57, 87, 0.8) 100%);;
-    margin-right: 20px;
 }
 
 .benefits-list li:nth-child(3) {
@@ -319,10 +366,14 @@ color: var(--acent);
 
 .benefits-list {
     display: flex;
+    justify-content: space-between;
 }
 
 .works {
     color: var(--white);
+    background-color: grey;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .works h2,
@@ -347,6 +398,11 @@ color: var(--acent);
     margin-top: 32px;
 }
 
+.reviews {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
 .reviews h2 {
     color: var(--second-text-colour);
     margin-bottom: 16px;
@@ -363,6 +419,11 @@ color: var(--acent);
 .review {
     color: var(--white);
     background: linear-gradient(1.17deg, #023957 -19.65%, #056088 93.67%);
+    width: 416px;
+    padding-left: 50px;
+    padding-right: 24px;
+    padding-top: 59px;
+    padding-bottom: 29px;
 }
 
 .review-text {
@@ -379,6 +440,9 @@ color: var(--acent);
 
 .video {
     text-align: right;
+    background-color: grey;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .video iframe {
@@ -401,6 +465,8 @@ color: var(--acent);
 .subscribe {
     color: var(--white);
     text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .subscribe .container-sub {
@@ -429,6 +495,9 @@ color: var(--acent);
 
 footer {
     color: var(--white);
+    background-color: #023957;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .contacts-list a {
@@ -440,9 +509,29 @@ footer {
     font-weight: 700;
     font-size: 24px;
     line-height: 1.7;
+    margin-bottom: 32px;
 }
 
 .footer-nav a {
     font-size: 16px;
     line-height: 1.5;
+}
+
+.footer-nav li:not(:last-child) {
+    margin-bottom: 16px;
+}
+    
+
+
+.footer-cont {
+    display: flex;
+}
+
+.footer-logo {
+    margin-bottom: 32px;
+    display: block;
+}
+
+.logo-container{
+    margin-right: 149px;
 }
