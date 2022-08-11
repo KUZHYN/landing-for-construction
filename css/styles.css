@@ -177,6 +177,7 @@ input {
     min-width: 150px;
     padding-left: 25px;
     padding-right: 25px;
+    cursor: pointer;
 }
 
 header {
@@ -219,6 +220,11 @@ color: var(--acent);
 .hero {
     color: var(--white);
     background: linear-gradient(26.47deg, #023957 22.58%, #056088 94.16%);
+    /* background-image: url(../images/IMG.jpg);
+    width: 930px;
+    height: 703px;
+    background-repeat: no-repeat;
+    background-position: right top;*/
 }
 
 .hero-title {
@@ -317,20 +323,20 @@ color: var(--acent);
 }
 
 .services-list li:hover {
-    background: linear-gradient(180deg, rgba(5, 96, 136, 0.8) 0%, rgba(2, 57, 87, 0.8) 100%);
+    background: linear-gradient(180deg, rgba(5, 96, 136, 0.8) 0%, rgba(2, 57, 87, 0.8) 100%),
+     url(../images/Rectangle-15.jpg);
     color: #fff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-size: cover;
 }
 
-.services-list li > img:hover {
+.services-list li:hover .icon {
     fill: #fff;
 }
 
-/* .services-list {
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-} */
+.services-list .icon {
+    fill: #434343;
+}
 
 .benefits h2.benefits-title {
     color: var(--second-text-colour);
@@ -357,7 +363,9 @@ color: var(--acent);
     padding-left: 95px;
     padding-bottom: 42px;
     padding-top: 52px;
-    background: linear-gradient(180deg, rgba(5, 96, 136, 0.8) 0%, rgba(2, 57, 87, 0.8) 100%);;
+    background: linear-gradient(180deg, rgba(5, 96, 136, 0.8) 0%, rgba(2, 57, 87, 0.8) 100%), url(../images/Rectangle-13.jpg);
+
+
 }
 
 .benefits-list li:nth-child(3) {
@@ -371,9 +379,10 @@ color: var(--acent);
 
 .works {
     color: var(--white);
-    background-color: grey;
+    background: linear-gradient(180deg, rgba(5, 96, 136, 0.9) 0%, rgba(2, 57, 87, 0.9) 100%), url(../images/Rectangle-38.jpg);
     padding-top: 50px;
     padding-bottom: 50px;
+    background-size: cover;
 }
 
 .works h2,
@@ -394,8 +403,30 @@ color: var(--acent);
     flex-wrap: wrap;
 }
 
-.works-button-link {
+/* .works-button-link {
+} */
+
+.underundertitle {
+    display: flex;
+    align-items: center;
+}
+
+.underundertitle::before {
+    content: "";
+    width: 714.5px;
+    height: 2px;
+    display: block;
+    background-color: #fff;
+    background: linear-gradient(180deg, #056088 0%, #09A7CA 100%);
+    margin-right: 40px;
+}
+
+.undertitle {
     margin-top: 32px;
+    display: block;
+    text-align: right;
+    display: flex;
+    justify-content: end;
 }
 
 .reviews {
@@ -470,11 +501,12 @@ color: var(--acent);
 }
 
 .subscribe .container-sub {
-    background: linear-gradient(1.17deg, #023957 -19.65%, #056088 93.67%);
+    background: linear-gradient(360deg, rgba(2, 57, 87, 0.8) 0%, rgba(5, 96, 136, 0.8) 112.47%), url(../images/BG.jpg);
     padding-left: 280px;
     padding-right: 280px;
     padding-top: 55px;
     padding-bottom: 55px;
+    background-size: cover;
 }
 
 .subscribe h2 {
