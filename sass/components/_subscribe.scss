@@ -1,0 +1,31 @@
+.subscribe {
+    color: $white;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.subscribe .container-sub {
+    background: linear-gradient(360deg, rgba(2, 57, 87, 0.8) 0%, rgba(5, 96, 136, 0.8) 112.47%), url(../images/BG.jpg);
+    padding-left: 280px;
+    padding-right: 280px;
+    padding-top: 55px;
+    padding-bottom: 55px;
+    background-size: cover;
+}
+
+.subscribe h2 {
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.subscribe p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.7;
+    text-align: center;
+    margin-bottom: 32px;
+}

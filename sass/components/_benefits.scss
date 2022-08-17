@@ -1,0 +1,41 @@
+.benefits h2.benefits-title {
+    color: $second-text-colour;
+    margin-bottom: 16px;
+}
+
+.benefits p.benefits-p {
+    margin-bottom: 32px;
+}
+
+.benefits {
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(-80%);
+}
+
+.benefits-list h3,
+.benefits-list p {
+    color: $white;
+
+}
+
+.benefits-list li {
+    width: 420px;
+    padding-right: 95px;
+    padding-left: 95px;
+    padding-bottom: 42px;
+    padding-top: 52px;
+    background: linear-gradient(180deg, rgba(5, 96, 136, 0.8) 0%, rgba(2, 57, 87, 0.8) 100%), url(../images/Rectangle-13.jpg);
+    background-repeat: no-repeat;
+
+}
+
+.benefits-list li:nth-child(3) {
+    margin: 0;
+}
+
+.benefits-list {
+    display: flex;
+    justify-content: space-between;
+}

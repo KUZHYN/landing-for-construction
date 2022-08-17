@@ -1,0 +1,27 @@
+.video {
+    text-align: right;
+    /* background-color: grey; */
+    padding-top: 120px;
+    padding-bottom: 50px;
+}
+
+.video img {
+    width: 1080px;
+    height: 512px;
+    position: relative;
+    left: -8%;
+}
+
+.video-container {
+    position: relative;
+}
+
+.video p {
+    color: $white;
+    background: linear-gradient(1.17deg, #023957 -19.65%, #056088 93.67%);
+    padding: 40px;
+    text-align: left;
+    position: absolute;
+    right: 113px;
+    bottom: -5%;
+}

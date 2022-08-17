@@ -1,0 +1,82 @@
+.works {
+    color: $white;
+    background: linear-gradient(180deg, rgba(5, 96, 136, 0.9) 0%, rgba(2, 57, 87, 0.9) 100%), url(../images/Rectangle-38.jpg);
+    padding-top: 173px;
+    padding-bottom: 501px;
+    background-size: cover;
+    height: 1414px;
+}
+
+.works h2,
+.works p {
+    text-align: center;
+}
+
+.works h2 {
+    margin-bottom: 16px;
+}
+
+.works p {
+    margin-bottom: 32px;
+}
+
+.works-list {
+    display: grid;
+    grid-template-columns: 200px 200px 420px 200px 200px;
+    grid-template-rows: 153px 153px 153px;
+    grid-gap: 20px;
+}
+
+.works-list-item1 {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 2.471;
+    grid-column-end: 2;
+}
+
+.works-list-item2 {
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-row-end: 3;
+    grid-column-end: 3;
+}
+
+.works-list-item3 {
+    grid-row-start: 1;
+    grid-column-start: 3;
+    grid-row-end: 2;
+    grid-column-end: 3;
+}
+
+.works-list-item7 {
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-row-end: 3;
+    grid-column-end: 3;
+}
+
+/* .works-button-link {
+} */
+
+.underundertitle {
+    display: flex;
+    align-items: center;
+}
+
+.underundertitle::before {
+    content: "";
+    width: 714.5px;
+    height: 2px;
+    display: block;
+    background-color: #fff;
+    background: linear-gradient(180deg, #056088 0%, #09A7CA 100%);
+    margin-right: 40px;
+}
+
+.undertitle {
+    margin-top: 32px;
+    display: block;
+    text-align: right;
+    display: flex;
+    justify-content: end;
+}

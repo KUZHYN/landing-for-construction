@@ -1,0 +1,38 @@
+.our-company {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.our-company-list p {
+    color: $second-text-colour;
+    margin-bottom: 32px;
+}
+
+.our-company-list {
+    display: flex;
+    justify-content: center;
+}
+
+.our-company-list>li:not(:last-child) {
+    margin-right: 62px;
+}
+
+.our-company-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.7;
+    color: $second-text-colour;
+    margin-bottom: 16px;
+}
+
+.company-text-first {
+    margin-bottom: 16px;
+}
+
+.company-text-second {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 16px;
+}

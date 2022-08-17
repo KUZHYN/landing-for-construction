@@ -1,0 +1,97 @@
+body {
+    background-color: $white;
+    /* background-color: gray; */
+    color: $main-text-colour;
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.text-first {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.text-second {
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.text-third {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.7;
+}
+
+.text-fourth {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.7;
+}
+
+.container {
+    width: 1310px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 10px;
+}
+
+.button-link {
+    color: $white;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.7;
+    text-align: center;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    background: linear-gradient(104.58deg, #056088 10.57%, #09A7CA 96.62%);
+    display: inline-block;
+    min-width: 200px;
+}
+
+.see-more {
+    min-width: 200px;
+    padding-left: 26px;
+    padding-right: 26px;
+}
+
+input {
+    width: 500px;
+    padding: 22px 25px;
+    border: none;
+}
+
+.button {
+    color: $white;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.7;
+    text-align: center;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    background: linear-gradient(104.58deg, #056088 10.57%, #09A7CA 96.62%);
+    display: inline-block;
+    border: none;
+    min-width: 150px;
+    padding-left: 25px;
+    padding-right: 25px;
+    cursor: pointer;
+}
+
+.link {
+    transition: color 100ms linear;
+}
+
+.link:hover,
+.link:focus {
+    color: #023957;
+}
