@@ -180,9 +180,23 @@ input {
     cursor: pointer;
 }
 
+.link {
+    transition: color 100ms linear;
+}
+
+.link:hover,
+.link:focus {
+    color: #023957;
+}
+
 header {
     color: var(--white);
-    background-color: grey;
+}
+
+.header {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
 }
 
 .logo {
@@ -213,19 +227,19 @@ header {
     display: block;
 }
 
-.link:hover, .link:focus {
-color: var(--acent);
-}
+
 
 .hero {
     color: var(--white);
     background: linear-gradient(26.47deg, #023957 22.58%, #056088 94.16%);
-    /* background-image: url(../images/IMG.jpg);
-    width: 930px;
-    height: 703px;
-    background-repeat: no-repeat;
-    background-position: right top;*/
+    height: 690px;
+    /* position: relative; */
 }
+
+/* .hero > .container {
+    padding: 0;
+    margin: 0;
+} */
 
 .hero-title {
     font-weight: 700;
@@ -243,6 +257,31 @@ color: var(--acent);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.7;
+}
+
+.hero-text-container {
+    position: absolute;
+    z-index: 2;
+    top: 180px;
+}
+
+.hero-img-container {
+    position: absolute;
+    z-index: 1;
+    width: 930px;
+    height: 703px;
+    /* right: 50%; 
+    top: 0;
+    transform: translateX(-50%); */
+    /* bottom: 0; */
+    margin-left: auto;
+    right: 0;
+}
+
+.hero-container {
+    position: relative;
+    width: 1400px;
+    margin: 0 auto;
 }
 
 .our-company {
@@ -285,7 +324,7 @@ color: var(--acent);
 }
 
 .services {
-    padding-bottom: 100px;
+    padding-bottom: 400px;
 }
 
 .services h2 {
@@ -319,11 +358,10 @@ color: var(--acent);
     padding-right: 30px;
     padding-bottom: 20px;
     padding-top: 20px;
-    /* margin-right: 20px; */
 }
 
 .services-list li:hover {
-    background: linear-gradient(180deg, rgba(5, 96, 136, 0.8) 0%, rgba(2, 57, 87, 0.8) 100%),
+    background-image: linear-gradient(180deg, rgba(5, 96, 136, 0.8) 0%, rgba(2, 57, 87, 0.8) 100%),
      url(../images/Rectangle-15.jpg);
     color: #fff;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -349,7 +387,9 @@ color: var(--acent);
 
 .benefits {
     text-align: center;
-    padding-bottom: 50px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(-80%);
 }
 
 .benefits-list h3, .benefits-list p {
@@ -364,7 +404,7 @@ color: var(--acent);
     padding-bottom: 42px;
     padding-top: 52px;
     background: linear-gradient(180deg, rgba(5, 96, 136, 0.8) 0%, rgba(2, 57, 87, 0.8) 100%), url(../images/Rectangle-13.jpg);
-
+    background-repeat: no-repeat;
 
 }
 
@@ -380,9 +420,10 @@ color: var(--acent);
 .works {
     color: var(--white);
     background: linear-gradient(180deg, rgba(5, 96, 136, 0.9) 0%, rgba(2, 57, 87, 0.9) 100%), url(../images/Rectangle-38.jpg);
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 173px;
+    padding-bottom: 501px;
     background-size: cover;
+    height: 1414px;
 }
 
 .works h2,
@@ -399,8 +440,38 @@ color: var(--acent);
 }
 
 .works-list {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 200px 200px 420px 200px 200px;
+    grid-template-rows: 153px 153px 153px;
+    grid-gap: 20px;
+}
+
+.works-list-item1 {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 2.471;
+    grid-column-end: 2;
+}
+
+.works-list-item2 {
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-row-end: 3;
+    grid-column-end: 3;
+}
+
+.works-list-item3 {
+    grid-row-start: 1;
+    grid-column-start: 3;
+    grid-row-end: 2;
+    grid-column-end: 3;
+}
+
+.works-list-item7 {
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-row-end: 3;
+    grid-column-end: 3;
 }
 
 /* .works-button-link {
@@ -430,8 +501,23 @@ color: var(--acent);
 }
 
 .reviews {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%) translateY(-100%);
+}
+
+.reviews-wrapper {
+    display: flex;
+
+}
+
+.rewiews-block {
+    padding-top: 51px;
+    padding-bottom: 71px;
+    padding-left: 32px;
+    padding-right: 32px;
+    background-color: #fff;
 }
 
 .reviews h2 {
@@ -447,6 +533,22 @@ color: var(--acent);
     background-color: #fff;
 } */
 
+.review-img {
+    position: absolute;
+    top: -35px;
+    left: -35px;
+}
+
+.review-container {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+}
+
+.reviews-container {
+    position: relative;
+}
+
 .review {
     color: var(--white);
     background: linear-gradient(1.17deg, #023957 -19.65%, #056088 93.67%);
@@ -455,6 +557,8 @@ color: var(--acent);
     padding-right: 24px;
     padding-top: 59px;
     padding-bottom: 29px;
+    position: relative;
+    text-align: left;
 }
 
 .review-text {
@@ -471,26 +575,30 @@ color: var(--acent);
 
 .video {
     text-align: right;
-    background-color: grey;
-    padding-top: 50px;
+    /* background-color: grey; */
+    padding-top: 120px;
     padding-bottom: 50px;
 }
 
-.video iframe {
+.video img {
     width: 1080px;
     height: 512px;
+    position: relative;
+    left: -8%;
 }
 
 .video-container {
-    text-align: center;
+    position: relative;
 }
 
 .video p {
     color: var(--white);
     background: linear-gradient(1.17deg, #023957 -19.65%, #056088 93.67%);
     padding: 40px;
-    display: inline-flex;
-    text-align: right;
+    text-align: left;
+    position: absolute;
+    right: 113px;
+    bottom: -5%;
 }
 
 .subscribe {
@@ -537,11 +645,25 @@ footer {
     line-height: 1.5;
 }
 
+.footer-nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
 .footer-menu {
     font-weight: 700;
     font-size: 24px;
     line-height: 1.7;
-    margin-bottom: 32px;
+    /* margin-bottom: 32px; */
+    margin-right: 50px;
+
+}
+
+.footer-nav {
+    display: flex;
+    align-items: center;
 }
 
 .footer-nav a {
@@ -549,11 +671,18 @@ footer {
     line-height: 1.5;
 }
 
-.footer-nav li:not(:last-child) {
-    margin-bottom: 16px;
+.footer-nav .link:hover, .footer-nav .link:focus {
+    color: #09A7CA;
 }
-    
 
+.footer-nav .link {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer-nav li:not(:last-child) {
+    margin-right: 40px; 
+}
 
 .footer-cont {
     display: flex;
