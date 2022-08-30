@@ -9,9 +9,18 @@
 
 .benefits {
     text-align: center;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%) translateY(-80%);
+
+    // display: none;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    @media screen and (min-width: 1200px) {
+        display: block;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%) translateY(-75%);
+        padding: 0;
+    }
 }
 
 .benefits-list h3,
@@ -21,14 +30,48 @@
 }
 
 .benefits-list li {
-    width: 420px;
-    padding-right: 95px;
-    padding-left: 95px;
-    padding-bottom: 42px;
-    padding-top: 52px;
-    background: linear-gradient(180deg, rgba(5, 96, 136, 0.8) 0%, rgba(2, 57, 87, 0.8) 100%), url(../images/Rectangle-13.jpg);
+   
+    // flex-basis: calc((100% - 2 * 15px) / 3);
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background: url(../../images/benefits-bg.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 15px;
 
+    @media screen and (min-width:1200px) {
+    width: 380px;
+    height: 300px;
+    padding-right: 80px;
+        padding-left: 80px;
+        padding-bottom: 40px;
+        padding-top: 40px;
+        margin-bottom: 0;
+    }
+
+    @media screen and (min-width:1300px) {
+        height: 300px;
+        width: 410px;
+        padding-right: 95px;
+            padding-left: 95px;
+            padding-bottom: 42px;
+            padding-top: 52px;
+    }
+
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image: url(../../images/benefits-bg@2x.jpg);
+        }
+    
+        @media screen and (min-device-pixel-ratio: 3),
+        screen and (min-resolution: 288dpi),
+        screen and (min-resolution: 3dppx) {
+             background-image: url(../../images/benefits-bg@3x.jpg);
+        
+        }
 }
 
 .benefits-list li:nth-child(3) {
@@ -36,6 +79,13 @@
 }
 
 .benefits-list {
-    display: flex;
+    
+    @media screen and (min-width:1200px){
+        display: flex;
     justify-content: space-between;
+    width: 1160px;
+    }
+    @media screen and (min-width:1300px) {
+        width: 1260px;
+    }
 }

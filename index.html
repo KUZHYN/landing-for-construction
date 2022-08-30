@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ua">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,9 +18,10 @@
 <body>
     <header class="header">
         <div class="container header-container">
-        <a href="/" class="logo">Logo</a>
+        <div class="header-wrapper">
+        <a href="/" class="logo header-logo">Logo</a>
         <nav class="header-nav">
-            <ul class="header-nav-list">
+            <ul class="header-nav-list ">
                 <li><a href="/" class="link">Головна</a></li>
                 <li><a href="#about" class="link">Про Нас</a></li>
                 <li><a href="#services" class="link">Послуги</a></li>
@@ -28,6 +29,21 @@
                 <li><a href="#contacts" class="link">Контакти</a></li>
             </ul>
         </nav>
+        <button type="button" class="header-nav-button" data-menu-button>
+            <svg height="40" width="40">
+                <use href="./images/header-sprite.svg#menu" class="icon-menu"></use>
+                <use href="./images/header-sprite.svg#close" class="icon-cross"></use>
+            </svg>
+        </button>
+        </div>
+        <div class="header-menu-container" data-menu>
+            <ul class="header-nav-list-mobile">
+                <li><a href="/" class="link">Головна</a></li>
+                <li><a href="#about" class="link">Про Нас</a></li>
+                <li><a href="#services" class="link">Послуги</a></li>
+                <li><a href="#contacts" class="link">Контакти</a></li>
+            </ul>
+        </div>
         </div>
     </header>
     <main>
@@ -40,7 +56,7 @@
                         <a class="hero-button-link button-link" href="">Зв'яжіться з нами</a>
                     </div>
                     <div class="hero-img-container">
-                        <img src="./images/IMG.jpg" alt="">
+                        <img srcset="./images/IMG.jpg 1x, ./images/IMG@2x.jpg 2x, ./images/IMG@3x.jpg 3x" src="./images/IMG.jpg" alt="" sizes="900 690">
                     </div>
                 </div>
             </div>
@@ -124,15 +140,12 @@
                 <h2 class="text-fourth">Наші роботи</h2>
                 <p class="text-first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, eius?</p>
                 <ul class="works-list">
-                    <li class="work-list-item1"><img src="./images/worksV1.png" alt=""></li>
-                    <li class="work-list-item2"><img src="./images/worksV2.png" alt=""></li>
-                    <li class="work-list-item3"><img src="./images/worksV3.png" alt=""></li>
-                    <li class="work-list-item4"><img src="./images/worksV4.png" alt=""></li>
-                    <li class="work-list-item5"><img src="./images/worksV5.png" alt=""></li>
-                    <li class="work-list-item6"><img src="./images/worksV6.png" alt=""></li>
-                    <li class="work-list-item7"><img src="./images/worksV7.png" alt=""></li>
-                    <li class="work-list-item8"><img src="./images/worksV8.png" alt=""></li>
-                    <li class="work-list-item9"><img src="./images/worksV9.png" alt=""></li>
+                    <li class="work-list-item1 item "><img src="./images/works-1.jpg" alt="" class="item-img"></li>
+                    <li class="work-list-item2 item"><img src="./images/works-3.jpg" alt="" class="item-img"></li>
+                    <li class="work-list-item3 item"><img src="./images/Works-2.jpg" alt="" class="item-img"></li>
+                    <li class="work-list-item4 item"><img src="./images/works-4.png" alt="" class="item-img"></li>
+                    <li class="not-li"></li>
+                    <li class="work-list-item5"><img src="./images/works-5.png" alt="" class="item-img"></li>
                 </ul>
                 <div class="undertitle">
                     <div class="underundertitle">
@@ -149,7 +162,7 @@
                     <p class="text-first">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                     <a href="" class="rewiews-button-link button-link see-more">Побачити більше</a>
                 </div>
-                <img src="./images/rewiews-image.jpg" alt="">
+                <img src="./images/rewiews-image.jpg" alt="" class="reviews-image">
                 </div>
                 <div class="review-container">
                 <div class="review"> 
@@ -160,20 +173,13 @@
                 </div>
             </div>
         </section>
-        <section class="video">
-            <div class="container video-container">
-                <img src="./images/worksV5.png" alt="">
-                <p class="text-first">Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Ab, dolores!</p>
-            </div>
-        </section>
         <section class="subscribe">
             <div class="container">
                 <div class="container-sub">
                     <h2>Бажаете отримувати свіжі новини?</h2>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex, consectetur.</p>
                     <form>
-                        <input type="email" placeholder="Enter your e-mail here" name="user-email">
-                        <!-- <a href="" class="subscribe-button-link button-link">Відправити</a> -->
+                        <input type="email" placeholder="Enter your e-mail here" name="user-email" class="subscribe-input">
                         <button type="submit" class="button">Відправити</button>
                     </form>
                 </div>
@@ -195,10 +201,11 @@
                     <li><a href="/" class="link">Головна</a></li>
                     <li><a href="#about" class="link">Про Нас</a></li>
                     <li><a href="#services" class="link">Послуги</a></li>
-                    <li><a href="#gallery" class="link">Галерея</a></li>
+                    <li><a href="#gallery" class="link link-gallery">Галерея</a></li>
                 </ul>
             </div>
         </div>
     </footer>
+    <script src="./mobile.menu.js"></script>
 </body>
 </html>

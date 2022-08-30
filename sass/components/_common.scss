@@ -4,7 +4,6 @@ body {
     color: $main-text-colour;
     font-family: Montserrat, sans-serif;
     font-style: normal;
-
 }
 
 ul {
@@ -38,11 +37,38 @@ a {
     line-height: 1.7;
 }
 
+// .container {
+//     width: 1310px;
+//     margin-left: auto;
+//     margin-right: auto;
+//     padding: 0 10px;
+// }
+
 .container {
-    width: 1310px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 10px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+
+    @media screen and (min-width: 480px) {
+        max-width: 480px;
+        margin: 0 auto;
+
+    }
+
+    @media screen and (min-width: 768px){
+        max-width: 768px;
+        margin: 0 auto;
+    }
+
+    @media screen and (min-width: 1200px){
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    @media screen and (min-width: 1300px) {
+        max-width: 1300px;
+        margin: 0 auto;
+    }
 }
 
 .button-link {
@@ -94,4 +120,10 @@ input {
 .link:hover,
 .link:focus {
     color: #023957;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 66px;
+    line-height: 1.17;
 }

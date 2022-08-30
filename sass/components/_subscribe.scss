@@ -1,31 +1,98 @@
 .subscribe {
     color: $white;
     text-align: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    // padding-top: 50px;
+    // padding-bottom: 50px;
+    padding-top: 25px;
+    background-image: url(../../images/BG.jpg);
+    background-size: cover;
+
+
+    @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image: url(../../images/BG@2x.jpg);
+        }
+    
+        @media screen and (min-device-pixel-ratio: 3),
+        screen and (min-resolution: 288dpi),
+        screen and (min-resolution: 3dppx) {
+            background-image: url(../../images/BG@3x.jpg);
+    
+        }
+
+    @media screen and (min-width:1200px) {
+        background-image: none;
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+}
+
+
+
+.subscribe-input {
+    width: 100%;
+    margin-bottom: 20px;
+
+    @media screen and (min-width:1200px) {
+        width: 445px;
+        margin-bottom: 0px;
+    }
+    @media screen and (min-width:1300px){
+        width: 502px;
+        margin-bottom: 0px;        
+    }
 }
 
 .subscribe .container-sub {
-    background: linear-gradient(360deg, rgba(2, 57, 87, 0.8) 0%, rgba(5, 96, 136, 0.8) 112.47%), url(../images/BG.jpg);
+    background-size: cover;
+    
+
+    @media screen and (min-width:1200px){
+    background-image: url(../../images/BG.jpg);
     padding-left: 280px;
     padding-right: 280px;
     padding-top: 55px;
     padding-bottom: 55px;
     background-size: cover;
+
+    @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url(../../images/BG@2x.jpg);
+    }
+
+    @media screen and (min-device-pixel-ratio: 3),
+    screen and (min-resolution: 288dpi),
+    screen and (min-resolution: 3dppx) {
+        background-image: url(../../images/BG@3x.jpg);
+
+    }
+    }
 }
 
 .subscribe h2 {
     font-weight: 700;
-    font-size: 52px;
+    // font-size: 52px;
+    font-size: 25px;
     line-height: 1.5;
     text-align: center;
     margin-bottom: 16px;
+
+    @media screen and (min-width:1200px){
+        font-size: 52px;
+    }
 }
 
 .subscribe p {
     font-weight: 500;
-    font-size: 16px;
+    // font-size: 16px;
+    font-size: 14px;
     line-height: 1.7;
     text-align: center;
     margin-bottom: 32px;
+
+    @media screen and (min-width:1200px) {
+        font-size: 16px;
+    }
 }

@@ -1,17 +1,25 @@
+.our-company-list {
+    display: none;
+    justify-content: center;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        
+    }
+}
+
 .our-company {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     text-align: center;
+    @media screen and (min-width:1200px) {
+        padding-bottom: 50px;
+    }
 }
 
 .our-company-list p {
     color: $second-text-colour;
     margin-bottom: 32px;
-}
-
-.our-company-list {
-    display: flex;
-    justify-content: center;
 }
 
 .our-company-list>li:not(:last-child) {
@@ -28,11 +36,12 @@
 
 .company-text-first {
     margin-bottom: 16px;
+    font-size: 20px;
 }
 
 .company-text-second {
     font-weight: 500;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.8;
     margin-bottom: 16px;
 }

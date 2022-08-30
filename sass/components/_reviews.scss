@@ -1,62 +1,113 @@
 .reviews {
-    position: absolute;
+    // position: absolute;
     text-align: center;
-    left: 50%;
-    transform: translateX(-50%) translateY(-100%);
+    // left: 50%;
+    // transform: translateX(-50%) translateY(-100%);
+    background-image: url(../../images/rewiews-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    // height: 820px;
+    padding-bottom: 125px;
+
+    
+    @media screen and (min-width: 1200px){
+        left: 50%;
+        transform: translateX(-50%) translateY(-100%);
+        position: absolute;
+        background-image: none;
+        // bottom: -3100px;
+        padding: 0;
+    }
 }
 
-.reviews-wrapper {
-    display: flex;
-
+@media screen and (min-width: 1200px) {
+    .reviews-wrapper {
+        display: flex;
+    }
 }
+
 
 .rewiews-block {
     padding-top: 51px;
-    padding-bottom: 71px;
+    padding-bottom: 30px;
     padding-left: 32px;
     padding-right: 32px;
+    
+
+    @media screen and (min-width: 1200px){
     background-color: #fff;
+    }
 }
 
 .reviews h2 {
-    color: $second-text-colour;
+    color: $white;
     margin-bottom: 16px;
+
+    @media screen and (min-width: 1200px) {
+        color: $second-text-colour;
+    }
 }
 
 .reviews p.text-first {
     margin-bottom: 32px;
+    color: $white;
+
+    @media screen and (min-width: 1200px) {
+        color: inherit;
+    }
 }
 
-/* .rewiews-block {
+@media screen and (min-width: 1200px) {
+    .rewiews-block {
     background-color: #fff;
-} */
+} 
+}
+
+
 
 .review-img {
     position: absolute;
-    top: -35px;
-    left: -35px;
-}
-
-.review-container {
-    position: absolute;
-    right: 10px;
-    top: 50%;
+    top: -50px;
+    left: -15px;
 }
 
 .reviews-container {
     position: relative;
 }
 
+@media screen and (min-width: 1200px) {
+    .review-container {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+        }
+}
+
+.reviews-image {
+    display: none;
+
+    @media screen and (min-width: 1200px) {
+        display: block;
+        width: 900px;
+        height: 401px;
+    }
+}
+
 .review {
     color: $white;
     background: linear-gradient(1.17deg, #023957 -19.65%, #056088 93.67%);
-    width: 416px;
+    
+    width: 100%;
     padding-left: 50px;
     padding-right: 24px;
     padding-top: 59px;
     padding-bottom: 29px;
     position: relative;
     text-align: left;
+
+    @media screen and (min-width: 1200px) {
+        width: 416px;
+    }
 }
 
 .review-text {
@@ -70,3 +121,91 @@
     font-size: 16px;
     line-height: 1.7;
 }
+
+.rewiews-button-link {
+    position: absolute;
+    // top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 102%;
+
+    @media screen and (min-width:1200px) {
+        position: static;
+        left: 0;
+        transform: translateX(0);
+        top: 0;
+    }
+}
+
+// .reviews {
+//     position: absolute;
+//     text-align: center;
+//     left: 50%;
+//     transform: translateX(-50%) translateY(-100%);
+// }
+
+// .reviews-wrapper {
+//     display: flex;
+
+// }
+
+// .rewiews-block {
+//     padding-top: 51px;
+//     padding-bottom: 71px;
+//     padding-left: 32px;
+//     padding-right: 32px;
+//     background-color: #fff;
+// }
+
+// .reviews h2 {
+//     color: var(--second-text-colour);
+//     margin-bottom: 16px;
+// }
+
+// .reviews p.text-first {
+//     margin-bottom: 32px;
+// }
+
+// /* .rewiews-block {
+//     background-color: #fff;
+// } */
+
+// .review-img {
+//     position: absolute;
+//     top: -35px;
+//     left: -35px;
+// }
+
+// .review-container {
+//     position: absolute;
+//     right: 10px;
+//     top: 50%;
+// }
+
+// .reviews-container {
+//     position: relative;
+// }
+
+// .review {
+//     color: var(--white);
+//     background: linear-gradient(1.17deg, #023957 -19.65%, #056088 93.67%);
+//     width: 416px;
+//     padding-left: 50px;
+//     padding-right: 24px;
+//     padding-top: 59px;
+//     padding-bottom: 29px;
+//     position: relative;
+//     text-align: left;
+// }
+
+// .review-text {
+//     font-style: italic;
+//     font-size: 16px;
+//     line-height: 1.7;
+// }
+
+// .review-end {
+//     font-weight: 600;
+//     font-size: 16px;
+//     line-height: 1.7;
+// }
